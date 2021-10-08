@@ -2,7 +2,7 @@ package pigcache
 
 import (
 	"fmt"
-	"time"
+	"strings"
 )
 
 //var m sync.Mutex
@@ -38,20 +38,25 @@ func fib(c, quit chan int)  {
 	}
 }
 func main()  {
-	c := make(chan int)
-	o := make(chan bool)
-	go func() {
-		for {
-			select {
-			case v := <-c:
-				println(v)
-			case <- time.After(5 * time.Second):
-				println("Timeout")
-				o <- true
-				break
-			}
-		}
-	}()
-	<- o
+	//c := make(chan int)
+	//o := make(chan bool)
+	//go func() {
+	//	for {
+	//		select {
+	//		case v := <-c:
+	//			println(v)
+	//		case <- time.After(5 * time.Second):
+	//			println("Timeout")
+	//			o <- true
+	//			break
+	//		}
+	//	}
+	//}()
+	//<- o
+	s := "hello world hello world"
+	idx := strings.SplitN(s, " ", 2)
+	println(idx[0])
+	println(idx[1])
+	println(idx[2])
+	fmt.Println(len(idx))
 }
-
