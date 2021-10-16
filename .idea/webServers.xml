@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3d62c42f-2202-4602-b4b4-2febf08de8d8" name="WSL2 (project level)" url="http://127.0.0.1">
+        <fileTransfer rootFolder="/home/mit/6.824" accessType="SFTP" host="127.0.0.1" port="23" sshConfigId="da5c64e6-5d68-4cfb-9559-1e4da922a358" sshConfig="root@127.0.0.1:23 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
